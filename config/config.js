@@ -1,6 +1,6 @@
 const config = {
   PORT: 7001,
-  ENV: "PROD",
+  ENV: "DEV",
   DEV: {
     DATABASE: {
       // URI: "mongodb://127.0.0.1",

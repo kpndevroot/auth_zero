@@ -25,7 +25,7 @@ export const createUser = async (req, res, next) => {
     const error = schema.validate(req.body);
   
     if (error.error) {
-      return res.status(200).json({ msg: error.error.details[0].message });
+       res.status(200).json({ msg: error.error.details[0].message });
     }
   
     // check email exist
@@ -70,7 +70,7 @@ export const createUser = async (req, res, next) => {
     try {
       if (req.body._id) {
         let doc = await User.findOne({ _id: req.body._id }).select(
-          "name email "
+          "name email mobile"
         );
         res.status(200).json({ status: true, doc: doc });
         // if (user) {

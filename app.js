@@ -63,7 +63,7 @@ app.use(function (err, req, res, next) {
 // //* local host port config
 
 app.listen(config.PORT, () => {
-  log.info(`APP IS RUNNING ${config.PORT} `);
+  log.info(`AUTH APP IS RUNNING ${config.PORT} `);
 });
 
 // ssl server port(httpsServer) port config

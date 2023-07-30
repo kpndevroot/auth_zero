@@ -1,6 +1,6 @@
 export const indexControll = async (req, res, next) => {
   try {
-    res.status(200).json({ status: true, msg: "HI" });
+    res.status(200).json({ status: true, msg: "HI DEV" });
   } catch (err) {}
 };
 export const testController = async (req, res, next) => {

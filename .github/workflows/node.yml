@@ -24,5 +24,16 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
       - run: npm i
-      - run: npm start
+      - name: Check if server is already running in PM2
+        run: |
+          pm2 show server  # This will return an error if server.js is not running
+          if [ $? -eq 0 ]; then
+            echo "Server is already running in PM2."
+            pm2 restart server.js
+          else
+            echo "Server is not running in PM2."
+            pm2 start server.js
+          fi
 
+      - name: Print PM2 process list
+        run: pm2 list

@@ -3,8 +3,8 @@ const config = {
   ENV: "DEV",
   DEV: {
     DATABASE: {
-      // URI: "mongodb://127.0.0.1",
-      URI: "mongodb://localhost",
+      URI: "mongodb://127.0.0.1",
+      // URI: "mongodb://localhost",
       PORT: 27017,
       DATABASE: "Authzero",
     },
@@ -15,8 +15,7 @@ const config = {
     },
     PRIVATEKEY:
       "dfvvlkfdmlv98usvjksjuefjsjdkcnskdncjsdhc9okjdsckljsdku8r9vjdjf",
-    PRIVATEKEYS:
-      "25krtiogadfvvlkfdmlv98usfkinozooznnFFzljfg4305vj99jgitrod",
+    PRIVATEKEYS: "25krtiogadfvvlkfdmlv98usfkinozooznnFFzljfg4305vj99jgitrod",
   },
   PROD: {
     DATABASE: {
@@ -42,5 +41,3 @@ const config = {
 };
 
 export default config;
-
-

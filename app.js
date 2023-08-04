@@ -10,7 +10,6 @@ import index from "./routes/index";
 const cors = require("cors");
 const https = require("https");
 const fs = require("fs");
-// import { saveRequests } from './common/common';
 
 // * local mongo config
 
